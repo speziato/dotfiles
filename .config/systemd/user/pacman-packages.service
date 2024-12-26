@@ -1,0 +1,14 @@
+[Unit]
+# REQUIRES: https://github.com/speziato/dotfiles/.local/bin/pacman-packages.sh
+Description=Get the list of explicitly installed packages with pacman and save it in a file
+After=local-fs.target
+After=network.target
+#After=XXX
+
+[Service]
+ExecStart=%h/.local/bin/pacman-packages.sh build
+RemainAfterExit=no
+Type=oneshot
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,32 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Nord",
+    "material-icon-theme.folders.theme": "specific",
+    "editor.fontFamily": "'Cascadia Code NF','Droid Sans Mono', 'monospace', monospace",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "window.customTitleBarVisibility": "auto",
+    "window.menuBarVisibility": "toggle",
+    "window.titleBarStyle": "custom",
+    "files.autoSave": "afterDelay",
+    "editor.fontLigatures": true,
+    "markdown.preview.typographer": true,
+    "markyMarkdown.updateOnSave": false,
+    "markdown-checkbox.typeOfBulletPoint": "-",
+    "emojisense.languages": {
+        "markdown": {
+            "markupCompletionsEnabled": true
+        }
+    },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "telemetry.telemetryLevel": "off",
+    "dev.containers.dockerComposePath": "podman-compose",
+    "dev.containers.dockerPath": "podman",
+    "dev.containers.dockerSocketPath": "/run/user/1000/podman/podman.sock",
+    "chat.commandCenter.enabled": false
+}
