@@ -1,0 +1,178 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+[Semicolon]",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+alt+cmd+p",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+f8",
+        "command": "-editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+cmd+p",
+        "command": "editor.action.marker.nextInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "f8",
+        "command": "-editor.action.marker.nextInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+right",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+left",
+        "command": "-cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "-cursorWordLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "-cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+right",
+        "command": "cursorWordRight"
+    },
+    {
+        "key": "cmd+left",
+        "command": "cursorWordLeft"
+    },
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {"text":"\u001b[1;5D"}, // CTRL+LEFT > bound via keybindings in zsh to "backward-word"
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {"text":"\u001b[1;5C"}, // CTRL+RIGHT > bound via keybindings in zsh to "forward-word"
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+delete",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {"text":"\u001b[3;5~"}, // CTRL+DEL > bound via keybindings in zsh to "kill-word"
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {"text":"\u0008"}, // CTRL+H > bound via keybindings in zsh to "backward-kill-word"
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+c",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {"text":"\u0003"}, // CTRL+C
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+v",
+        "command": "workbench.action.terminal.paste",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "-cursorBottomSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "-cursorTopSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "-cursorHomeSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "-cursorEndSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+home",
+        "command": "cursorTop"
+    },
+    {
+        "key": "cmd+end",
+        "command": "cursorBottom"
+    },
+    {
+        "key": "shift+cmd+end",
+        "command": "cursorBottomSelect"
+    },
+    {
+        "key": "shift+cmd+home",
+        "command": "cursorTopSelect"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "scrollLineDown"
+    },
+    {
+        "key": "cmd+up",
+        "command": "scrollLineUp"
+    },
+    {
+        "key": "shift+cmd+[Semicolon]",
+        "command": "terminal.focus"
+    },
+    {
+        "key": "shift+cmd+[Semicolon]",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "cursorWordLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-cursorWordLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "cursorWordRightSelect"
+    },
+    
+]

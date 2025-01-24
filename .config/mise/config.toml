@@ -1,0 +1,7 @@
+[tools]
+usage = "latest"
+kustomize = "5.0.3"
+stern = "latest"
+kubectl = "1.31.0"
+dyff = "1.8.1"
+bat = "latest"
