@@ -1,6 +1,11 @@
 alias watch='watch '
-alias ls='ls --color'
-alias ll='ls -la'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='grep -F'
+alias egrep='grep -E'
+alias ll='ls -alFh'
+alias la='ls -A'
+alias l='ls -CF'
 alias k=kubectl
 alias cd..='cd ..'
 alias cls='clear'
