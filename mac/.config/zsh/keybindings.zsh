@@ -136,6 +136,7 @@ typeset -gA keys=(
     Ctrl+PageUp          '^[[5;5~'
     Ctrl+PageDown        '^[[6;5~'
     Ctrl+Backspace       '^H'
+    Ctrl+R               '^R'
 
     Ctrl+Shift+Up        '^[[1;6A'
     Ctrl+Shift+Down      '^[[1;6B'
@@ -190,3 +191,4 @@ bindkey -- "${keys[Ctrl+Left]}"       .backward-word
 bindkey -- "${keys[Ctrl+Right]}"      .forward-word
 bindkey -- "${keys[Ctrl+Delete]}"     .kill-word
 bindkey -- "${keys[Ctrl+Backspace]}"  .backward-kill-word
+bindkey -- "${keys[Ctrl+R]}"          .history-incremental-search-backward
