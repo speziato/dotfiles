@@ -77,21 +77,9 @@ zstyle ':completion:*' keep-prefix true
 
 zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
-#eval "$(starship init zsh)"
-#source $ZDOTDIR/zsh-completions/_starship
 autoload -Uz _starship; _starship
-#eval "$(mise activate zsh)"
 autoload -Uz _mise_activate; _mise_activate
-#autoload -Uz _mise; _mise
-source $ZDOTDIR/zsh-completions/_mise
-
 # Kubectl
-#source <(kubectl completion zsh)
-source $ZDOTDIR/zsh-completions/_kubectl
 zstyle ':completion:*:*:kubectl:*' list-grouped false
-
-# stern
-#source <(stern --completion=zsh)
-source $ZDOTDIR/zsh-completions/_stern
 
 source $HOMEBREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
