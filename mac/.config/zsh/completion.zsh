@@ -79,6 +79,7 @@ zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f
 
 autoload -Uz _starship; _starship
 autoload -Uz _mise_activate; _mise_activate
+source $ZDOTDIR/zsh-completions/_zoxide
 # Kubectl
 zstyle ':completion:*:*:kubectl:*' list-grouped false
 
