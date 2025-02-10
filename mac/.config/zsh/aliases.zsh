@@ -7,6 +7,7 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 alias k=kubectl
+alias cd='z'
 alias cd..='cd ..'
 alias cls='clear'
 pswgen() { openssl rand -base64 100 | head -c"${1:-12}"; echo }
