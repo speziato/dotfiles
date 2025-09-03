@@ -1,8 +1,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# These 2 MF break the CTRL+R history search!
-# export EDITOR="vim"
-# export VISUAL="vim"
+export EDITOR="vim"
+export VISUAL="vim"
 
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
