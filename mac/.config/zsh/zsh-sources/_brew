@@ -1,0 +1,7 @@
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+fpath[1,0]="/opt/homebrew/share/zsh/site-functions";
+PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/Users/riccardo.cannella/.local/share/mise/installs/helm/3.17.3/darwin-arm64:/Users/riccardo.cannella/.local/share/mise/installs/usage/2.2.2:/Users/riccardo.cannella/.local/share/mise/installs/kustomize/5.6.0:/Users/riccardo.cannella/.local/share/mise/installs/terraform/1.9.0:/Users/riccardo.cannella/.local/share/mise/installs/stern/1.32.0:/Users/riccardo.cannella/.local/share/mise/installs/kubectl/1.31.0:/Users/riccardo.cannella/.local/share/mise/installs/kompose/1.34.0:/Users/riccardo.cannella/.local/share/mise/installs/yarn/1.22.22/bin:/Users/riccardo.cannella/.local/share/mise/installs/dyff/1.8.1:/Users/riccardo.cannella/.local/share/mise/installs/bat/0.25.0/bat-v0.25.0-aarch64-apple-darwin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/riccardo.cannella/.local/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/opt/curl/bin"; export PATH;
+[ -z "${MANPATH-}" ] || export MANPATH=":${MANPATH#:}";
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";

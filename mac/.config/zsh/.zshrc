@@ -25,20 +25,21 @@ setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file.
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion.
 
+# +---------+
+# | SOURCES |
+# +---------+
+
+source $ZDOTDIR/sources.zsh
+
+
 # +------------+
 # | COMPLETION |
 # +------------+
 
 source $ZDOTDIR/completion.zsh
 
-# Python stuff
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-#_python-argcomplete
-
-# Aliases
+# +---------+
+# | ALIASES |
+# +---------+
 
 source $ZDOTDIR/aliases.zsh
-
-source $ZDOTDIR/keybindings.zsh

@@ -1,11 +1,27 @@
+# The zsh-completion folder contains all zsh-compatible completion functions as generated
+# by the respective utility command. Below is the list of such commands
+#
+# Not needed because brew adds them automatically after install:
+# brew, docker, kind, mise, starship, wormhole, yq, zoxide
+#
+# Kubectl:
+# kubectl completion zsh > "$ZDOTDIR/zsh-completions/_kubectl"
+#
+# Kustomize:
+# kustomize completion zsh > $ZDOTDIR/zsh-completions/_kustomize
+#
+# Stern:
+# stern --completion zsh > $ZDOTDIR/zsh-completions/_stern
+#
+# Multipass:
+# curl -o $ZDOTDIR/zsh-completions/_multipass https://raw.githubusercontent.com/johnnymatthews/multipass-zsh-autocomplete/refs/heads/yolo/_multipass
+
 # +---------+
 # | General |
 # +---------+
 
 # Load more completions
 fpath=($ZDOTDIR/zsh-completions $fpath)
-
-eval "$(/usr/local/bin/brew shellenv)"
 
 # Should be called before compinit
 zmodload zsh/complist
@@ -77,10 +93,6 @@ zstyle ':completion:*' keep-prefix true
 
 zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
-autoload -Uz _starship; _starship
-autoload -Uz _mise_activate; _mise_activate
-source $ZDOTDIR/zsh-completions/_zoxide
+# autoload -Uz _starship; _starship
 # Kubectl
 zstyle ':completion:*:*:kubectl:*' list-grouped false
-
-source $HOMEBREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
